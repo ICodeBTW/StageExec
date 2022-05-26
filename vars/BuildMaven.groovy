@@ -9,7 +9,7 @@ class BuildMaven {
     void execute(String name, boolean param1) {
         script.echo "Triggering script with name == ${name}"
         script.sh "echo 'Execute your desired bash command here'"
-        script.sh  VERSION
+        script.sh  this.script.env.VERSION
 
         if (param1) {
             script.sh "echo 'Executing conditional command, because param1 == true'"
