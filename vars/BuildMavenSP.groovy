@@ -19,7 +19,7 @@ class BuildMavenSP{
     }
 
     void Build(){
-        this.script.echo this.script.env
+        this.script.echo this.script.env.VERSION
     }
 
     static void main(String[] args){
