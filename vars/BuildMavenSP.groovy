@@ -7,19 +7,19 @@ class BuildMavenSP{
         this.script  = script
     }
 
-    void execute(Map config) {
-        script.stage(config.name) {
-            script.echo "Triggering ${name} stage..."
-            script.sh "echo 'Execute your desired bash command here'"
-            script.echo this.script.env.VERSION
+    void execute() {
+        script.stage("Build") {
 
-            if (config.param1) {
-                script.sh "echo 'Executing conditional command, because param1 == true'"
-            }
+            Build()
+            
         }
-        script.stage("Stage 2"){
-            script.echo "Stage 2"
+        script.stage("Deploy"){
+            this.script.echo "Hello:)"
         }
+    }
+
+    void Build(){
+        this.script.echo this.script.env
     }
 
     static void main(String[] args){
