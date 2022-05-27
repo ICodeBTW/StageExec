@@ -17,7 +17,9 @@ class BuildMavenSP{
                 script.sh "echo 'Executing conditional command, because param1 == true'"
             }
         }
-        script.stage("Stage 2")
+        script.stage("Stage 2"){
+            script.echo "Stage 2"
+        }
     }
 
     static void main(String[] args){
