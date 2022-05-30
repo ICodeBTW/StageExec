@@ -23,7 +23,9 @@ class BuildMavenSP{
         this.script.echo (this.script.env.VERSION || "working")
     }
 
-    static void working(Script script){
-        script.echo "Hello"
-    }
+  
+}
+
+static def function(){
+    this is a function 
 }
