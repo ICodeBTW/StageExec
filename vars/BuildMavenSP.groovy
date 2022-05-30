@@ -23,7 +23,7 @@ class BuildMavenSP{
         this.script.echo (this.script.env.VERSION || "working")
     }
 
-    static void main(String[] args){
-        
+    static void working(Script script){
+        script.echo "Hello"
     }
 }
