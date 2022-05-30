@@ -11,7 +11,7 @@ class BuildMavenSP{
         script.stage("Build") {
             this.script.echo config.example
              Utility.check(this.script)
-            outDir = new File("./out")
+            def outDir = new File("./out")
             outDir.makedir()
             
         }
