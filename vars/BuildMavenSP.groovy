@@ -12,7 +12,7 @@ class BuildMavenSP{
             this.script.echo config.example
              Utility.check(this.script)
             def outDir = new File("./out")
-            outDir.makedir()
+            outDir.mkdir()
             
         }
         script.stage("Deploy"){
