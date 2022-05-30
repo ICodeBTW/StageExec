@@ -7,9 +7,9 @@ class BuildMavenSP{
         this.script  = script
     }
 
-    void execute() {
+    void execute(Map config) {
         script.stage("Build") {
-
+            this.script.echo config.example
             Build()
             Utility.check(this.script)
             
