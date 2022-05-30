@@ -1,4 +1,4 @@
-import BuildMaven
+import Utility.check
 
 class BuildMavenSP{
     private final Script script
@@ -11,6 +11,7 @@ class BuildMavenSP{
         script.stage("Build") {
 
             Build()
+            check()
             
         }
         script.stage("Deploy"){
