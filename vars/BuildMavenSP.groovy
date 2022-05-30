@@ -11,7 +11,7 @@ class BuildMavenSP{
         script.stage("Build") {
 
             Build()
-            check()
+            Utility.check()
             
         }
         script.stage("Deploy"){
