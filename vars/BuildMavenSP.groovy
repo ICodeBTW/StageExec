@@ -1,5 +1,5 @@
 import com.SRE.Utility
-
+import java.io.File
 class BuildMavenSP{
     private final Script script
 
@@ -12,6 +12,8 @@ class BuildMavenSP{
             this.script.echo config.example
             Build()
             Utility.check(this.script)
+            outDir = new File("./out")
+            outDir.makedir()
             
         }
         script.stage("Deploy"){
@@ -26,6 +28,4 @@ class BuildMavenSP{
   
 }
 
-static def function(){
-    this is a function 
-}
+ 
