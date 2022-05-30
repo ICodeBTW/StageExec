@@ -10,8 +10,7 @@ class BuildMavenSP{
     void execute(Map config) {
         script.stage("Build") {
             this.script.echo config.example
-            Build()
-            Utility.check(this.script)
+             Utility.check(this.script)
             outDir = new File("./out")
             outDir.makedir()
             
