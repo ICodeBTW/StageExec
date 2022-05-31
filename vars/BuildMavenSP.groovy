@@ -18,7 +18,7 @@ class BuildMavenSP{
         script.stage("Deploy"){
             this.script.echo "Hello:)"
         }
-        script.script(){
+        script.script{
             echo "Hello"
         }
     }
